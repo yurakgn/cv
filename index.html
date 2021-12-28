@@ -1,35 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Yury CV</title>
 </head>
-    <body>
-        <h1>Иванов Юрий Владимирович</h1>
-        <p><em>Я лучший разработчик, но будущий</em></p>
-        <p><strong>Я очень люблю путешествовать</strong></p>
 
-  
-        <hr>
-        <h2>Связаться со мной</h2>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/img/photo.jpg" alt="Юрий" class="avatar">
+            <div class="info">
+                <h2 class="header">Иванов Юрий Владимирович</h2>
+                <p class="header__text">Frontend разрабочтик, дизайнер, хайкинг, бег, горы, море.</p>
 
-        <form action="">v</form>
+                <h4>Как связаться со мной:</h4>
+                <ul>
+                    <li class="contact"><a href="#" class=link>Instagram</a></li>
+                    <li class="contact"><a href="#" class=link>Telegram</a></li>
+                    <li class="contact"><a href="#" class=link>VK</a></li>
+                    <li class="contact"><a href="#" class=link>eMail</a></li>
+                    <li class="contact"><a href="#" class=link>WWW</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <h2>Мои социальыне сети</h2>
-            <ul>
-                <li></li>
-                <li></li>
-            </ul>
-
-        <h2>Мои хобби</h2>
-            <ol>
-                <li>Фото</li>
-                <li>Видео</li>
-                <li>Море</li>
-                <li>Горы</li>
+        <div class="card">
+            <h4>Мои хобби</h4>
+            <ol class="list">
+                <li>Информационные техологии</li>
+                <li>Хайкинг</li>
+                <li>Бег</li>
+                <li>Путешествия</li>
             </ol>
+        </div>
+        <div class="card">
+            <h4>Опыт работы</h4>
+            <table class="table">
+                <tr>
+                    <th>Компания</th>
+                    <th>Должность</th>
+                    <th>Задачи</th>
+                    <th>Год</th>
+                </tr>
+                <tr>
+                    <td>ОАО Дрожжзавод</td>
+                    <td>Инженер-программист</td>
+                    <td>Организация локальной сети; Сетевая безопасность, Windows Server, Domain, 1С, автоматизация,
+                        разработка WEB сайта и его поддержка.</td>
+                    <td>03.2002 - 07.2003</td>
+                </tr>
+                <tr>
+                    <td>Компания Крым</td>
+                    <td>IT-специалист</td>
+                    <td>Системный администратор, внедрение и обслуживание торгового оборудования (в структуре компании 2
+                        супермаркета),
+                        автоматизация точек общепита (3 точки общепита), LAN, Windows Server, Linux Server, поддержка
+                        WEB сайта.</td>
+                    <td>07.2002 - 08.2011</td>
+                </tr>
+                <tr>
+                    <td>Курганский мясокомбинат</td>
+                    <td>Экономист-аналитик</td>
+                    <td>Аналитика на базе 1С УПП, анализ эффективности деятельности, формирование управленческой
+                        отчетности, нормирование
+                        затрат, ценообразование, рентабельность, снижение издержек, разработка мотивации отдела продаж,
+                        БДР, БДДС.</td>
+                    <td>04.2008 - 02.2011</td>
+                </tr>
+                <tr>
+                    <td>Инстафорекс</td>
+                    <td>Аналитик-разработчик</td>
+                    <td>Разработка и внедрение автоматизированных торговых систем для ПАММ (модуль управления процентным
+                        распределением)
+                        платформы, разработка торговой стратегии на языке программирования MetaQuotes Language 4.</td>
+                    <td>02.2011 - 03.2018</td>
+                </tr>
+                <tr>
+                    <td>Freelance</td>
+                    <td>IT-специалист, FrontEnd-разработчик</td>
+                    <td>VDS/VPS настройка веб-серверов, HTML, CSS, SACCS, JavaScript, Adobe Photoshop, Figma.</td>
+                    <td>03.2018 - now</td>
+                </tr>
+            </table>
 
-    </body>
+
+
+
+        </div>
+        <div class="card">
+            <form action="#">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Ваш email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" cols="15" rows="2"></textarea>
+                </div>
+                <input type="submit" class="button">
+            </form>
+        </div>
+
+
+        <!-- <div class="model-box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+    </div>
+</body>
+
 </html>
